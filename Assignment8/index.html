@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Search Catalog</title>
+</head>
+
+<body>
+
+    <h1>Book Search Catalog</h1>
+
+    <form action="store_history.php" method="post">
+        <label for="searchType">Search Type:</label>
+        <select name="searchType" id="searchType">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="genre">Genre</option>
+        </select>
+
+        <label for="keyword">Keyword:</label>
+        <input type="text" name="keyword" id="keyword">
+
+        <input type="submit" value="Search">
+    </form>
+
+</body>
+
+</html>

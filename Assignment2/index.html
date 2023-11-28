@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative, Absolute and Fixed</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            background-color: #0099ff;
+            padding: 20px 0;
+        }
+
+        nav .logo {
+            padding-left: 30px;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+            position: absolute;
+            right: 100px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+    </style>
+    <nav>
+        <h3 class="logo">LOGO</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br>
+    <section>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel perspiciatis libero ea fugiat fugit esse, ipsam
+            labore voluptatem corporis numquam ratione voluptatibus dicta facilis doloremque pariatur. Rem, illum
+            numquam ipsam soluta eveniet cupiditate reprehenderit maxime ut esse, quis possimus commodi. Adipisci
+            tenetur repellat at animi sapiente ex voluptas non, numquam modi est voluptatem ipsam sunt earum maiores
+            quia corporis nisi! Cupiditate, debitis. Voluptates sapiente soluta dicta suscipit, fuga ratione repellendus
+            culpa, ipsam, cumque rem obcaecati. Ducimus blanditiis error voluptate odio. Debitis corporis repudiandae
+            dolorum nihil, eum, veniam illo quaerat dolore vel corrupti officiis ipsum reiciendis nesciunt dignissimos
+            voluptatem commodi reprehenderit.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci itaque eum veritatis corrupti impedit
+            officia quidem delectus cum optio repellendus repudiandae sunt cupiditate reiciendis beatae atque nemo
+            voluptatem, soluta quasi fugit in quaerat consequatur. Nesciunt, neque? Fugiat porro libero odio voluptate,
+            deserunt ducimus. Adipisci eveniet rem architecto voluptas cumque nisi amet tenetur dolorem exercitationem
+            explicabo delectus quos ratione iste, animi quo recusandae voluptate repudiandae earum reprehenderit.
+            Excepturi et ratione atque a dolore ipsum, maxime dignissimos voluptatum asperiores. Ea odit magni nemo
+            adipisci provident excepturi ipsa et facere rem doloremque recusandae dolores totam nam, necessitatibus sed
+            nulla, placeat reprehenderit animi enim.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate veritatis reiciendis esse et
+            officia. Nulla illum praesentium, perspiciatis iusto quae doloribus placeat harum consequuntur optio
+            incidunt atque iure nesciunt autem repellat possimus odio voluptate ullam voluptatibus facilis tempora quia
+            repellendus dicta. Officia optio quibusdam voluptates odio ipsum aspernatur debitis modi cupiditate, quo
+            labore dignissimos sunt dolores veniam maxime! Dignissimos modi illum veritatis aperiam! Cum ut, omnis neque
+            laboriosam non voluptates, natus amet, voluptas inventore illum necessitatibus? Numquam recusandae
+            voluptatem quod debitis cumque blanditiis, ea tempora quas molestias nam corporis totam sunt esse
+            perspiciatis sed explicabo quae amet pariatur commodi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel perspiciatis libero ea fugiat fugit esse, ipsam
+            labore voluptatem corporis numquam ratione voluptatibus dicta facilis doloremque pariatur. Rem, illum
+            numquam ipsam soluta eveniet cupiditate reprehenderit maxime ut esse, quis possimus commodi. Adipisci
+            tenetur repellat at animi sapiente ex voluptas non, numquam modi est voluptatem ipsam sunt earum maiores
+            quia corporis nisi! Cupiditate, debitis. Voluptates sapiente soluta dicta suscipit, fuga ratione repellendus
+            culpa, ipsam, cumque rem obcaecati. Ducimus blanditiis error voluptate odio. Debitis corporis repudiandae
+            dolorum nihil, eum, veniam illo quaerat dolore vel corrupti officiis ipsum reiciendis nesciunt dignissimos
+            voluptatem commodi reprehenderit.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci itaque eum veritatis corrupti impedit
+            officia quidem delectus cum optio repellendus repudiandae sunt cupiditate reiciendis beatae atque nemo
+            voluptatem, soluta quasi fugit in quaerat consequatur. Nesciunt, neque? Fugiat porro libero odio voluptate,
+            deserunt ducimus. Adipisci eveniet rem architecto voluptas cumque nisi amet tenetur dolorem exercitationem
+            explicabo delectus quos ratione iste, animi quo recusandae voluptate repudiandae earum reprehenderit.
+            Excepturi et ratione atque a dolore ipsum, maxime dignissimos voluptatum asperiores. Ea odit magni nemo
+            adipisci provident excepturi ipsa et facere rem doloremque recusandae dolores totam nam, necessitatibus sed
+            nulla, placeat reprehenderit animi enim.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate veritatis reiciendis esse et
+            officia. Nulla illum praesentium, perspiciatis iusto quae doloribus placeat harum consequuntur optio
+            incidunt atque iure nesciunt autem repellat possimus odio voluptate ullam voluptatibus facilis tempora quia
+            repellendus dicta. Officia optio quibusdam voluptates odio ipsum aspernatur debitis modi cupiditate, quo
+            labore dignissimos sunt dolores veniam maxime! Dignissimos modi illum veritatis aperiam! Cum ut, omnis neque
+            laboriosam non voluptates, natus amet, voluptas inventore illum necessitatibus? Numquam recusandae
+            voluptatem quod debitis cumque blanditiis, ea tempora quas molestias nam corporis totam sunt esse
+            perspiciatis sed explicabo quae amet pariatur commodi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel perspiciatis libero ea fugiat fugit esse, ipsam
+            labore voluptatem corporis numquam ratione voluptatibus dicta facilis doloremque pariatur. Rem, illum
+            numquam ipsam soluta eveniet cupiditate reprehenderit maxime ut esse, quis possimus commodi. Adipisci
+            tenetur repellat at animi sapiente ex voluptas non, numquam modi est voluptatem ipsam sunt earum maiores
+            quia corporis nisi! Cupiditate, debitis. Voluptates sapiente soluta dicta suscipit, fuga ratione repellendus
+            culpa, ipsam, cumque rem obcaecati. Ducimus blanditiis error voluptate odio. Debitis corporis repudiandae
+            dolorum nihil, eum, veniam illo quaerat dolore vel corrupti officiis ipsum reiciendis nesciunt dignissimos
+            voluptatem commodi reprehenderit.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci itaque eum veritatis corrupti impedit
+            officia quidem delectus cum optio repellendus repudiandae sunt cupiditate reiciendis beatae atque nemo
+            voluptatem, soluta quasi fugit in quaerat consequatur. Nesciunt, neque? Fugiat porro libero odio voluptate,
+            deserunt ducimus. Adipisci eveniet rem architecto voluptas cumque nisi amet tenetur dolorem exercitationem
+            explicabo delectus quos ratione iste, animi quo recusandae voluptate repudiandae earum reprehenderit.
+            Excepturi et ratione atque a dolore ipsum, maxime dignissimos voluptatum asperiores. Ea odit magni nemo
+            adipisci provident excepturi ipsa et facere rem doloremque recusandae dolores totam nam, necessitatibus sed
+            nulla, placeat reprehenderit animi enim.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate veritatis reiciendis esse et
+            officia. Nulla illum praesentium, perspiciatis iusto quae doloribus placeat harum consequuntur optio
+            incidunt atque iure nesciunt autem repellat possimus odio voluptate ullam voluptatibus facilis tempora quia
+            repellendus dicta. Officia optio quibusdam voluptates odio ipsum aspernatur debitis modi cupiditate, quo
+            labore dignissimos sunt dolores veniam maxime! Dignissimos modi illum veritatis aperiam! Cum ut, omnis neque
+            laboriosam non voluptates, natus amet, voluptas inventore illum necessitatibus? Numquam recusandae
+            voluptatem quod debitis cumque blanditiis, ea tempora quas molestias nam corporis totam sunt esse
+            perspiciatis sed explicabo quae amet pariatur commodi?</p>
+    </section>
+
+</body>
+
+</html>

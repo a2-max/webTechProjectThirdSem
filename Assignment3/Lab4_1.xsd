@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- ELEMENT DECLARATION with Simple Type(String)-->
+    <xs:element name = "title" type="xs:string" />
+    <xs:element name = "author" type="xs:string"/>
+    <!-- ELEMENT DECLARATION with Simple Type(Decimal)-->
+    <xs:element name = "price" type="xs:decimal"/>
+    <!--Complex ELEMENT for library-->
+    <xs:element name = "library">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element ref ="book"/>
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+     <!--Complex ELEMENT for library-->
+     <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="author"/>
+                <xs:element ref="price"/>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+</xs:schema>

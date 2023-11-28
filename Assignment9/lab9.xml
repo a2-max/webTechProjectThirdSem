@@ -1,0 +1,24 @@
+<!-- 9.Create a XML file containing records of employee having elements
+of simple and complex types with different types of elements and attributes defined. -->
+<Company>
+    <Employee ID="1" FirstName="Vishal" LastName="Shrestha" Department="IT">
+      <Phone Type="Mobile">123-456-7890</Phone>
+      <Phone Type="Work">987-654-3210</Phone>
+      <Address>
+        <Street>123 Main St</Street>
+        <City>Anytown</City>
+        <State>CA</State>
+        <PostalCode>12345</PostalCode>
+      </Address>
+    </Employee>
+    <Employee ID="2" FirstName="Bikash" LastName="Shrestha" Department="HR">
+      <Phone Type="Mobile">555-123-4567</Phone>
+      <Address>
+        <Street>456 Elm St</Street>
+        <City>Another Town</City>
+        <State>NY</State>
+        <PostalCode>54321</PostalCode>
+      </Address>
+    </Employee>
+  </Company>
+  

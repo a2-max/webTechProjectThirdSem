@@ -1,0 +1,15 @@
+
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Lab4_1.xsd">
+    <book>
+        <title> RAam</title>
+        <author>mani </author>
+        <price>100</price>
+    </book>
+    <book>
+        <title> flaj</title>
+        <author> fadfa</author>
+        <price>312</price>
+    </book>
+</library>

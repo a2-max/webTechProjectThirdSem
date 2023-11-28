@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependent Selection Boxes</title>
+</head>
+<body>
+    <h1>Location Selector</h1>
+    <label for="country">Country:</label>
+    <select id="country" onchange="populateStates()">
+        <option value="">Select Country</option>
+        <option value="nepal">Nepal</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+    </select>
+
+    <label for="state">State:</label>
+    <select id="state" onchange="populateDistricts()">
+        <option value="">Select State</option>
+    </select>
+
+    <label for="district">District:</label>
+    <select id="district" onchange="populateCities()">
+        <option value="">Select District</option>
+    </select>
+
+    <label for="city">City:</label>
+    <select id="city">
+        <option value="">Select City</option>
+    </select>
+
+    <script>
+        const countryStateData = {
+            nepal:{
+                bagmati: ["Sindhuli", "Kathmandu", "Hetauda"],
+                province2:["Mahottari", "Sarlahi", "Parsa", "Bara"]
+            },
+            usa: {
+                california: ["Los Angeles", "San Francisco"],
+                texas: ["Houston", "Austin"],
+            },
+            canada: {
+                ontario: ["Toronto", "Ottawa"],
+                quebec: ["Montreal", "Quebec City"],
+            },
+        };
+
+        function populateStates() {
+            const country = document.getElementById("country").value;
+            const stateSelect = document.getElementById("state");
+            stateSelect.innerHTML = "<option value=''>Select State</option>";
+
+            if (country && countryStateData[country]) {
+                for (const state in countryStateData[country]) {
+                    const option = document.createElement("option");
+                    option.value = state;
+                    option.textContent = state;
+                    stateSelect.appendChild(option);
+                }
+            }
+        }
+
+        function populateDistricts() {
+            const country = document.getElementById("country").value;
+            const state = document.getElementById("state").value;
+            const districtSelect = document.getElementById("district");
+            districtSelect.innerHTML = "<option value=''>Select District</option>";
+
+            if (country && state && countryStateData[country][state]) {
+                countryStateData[country][state].forEach((district) => {
+                    const option = document.createElement("option");
+                    option.value = district;
+                    option.textContent = district;
+                    districtSelect.appendChild(option);
+                });
+            }
+        }
+
+        function populateCities() {
+            const country = document.getElementById("country").value;
+            const state = document.getElementById("state").value;
+            const district = document.getElementById("district").value;
+            const citySelect = document.getElementById("city");
+            citySelect.innerHTML = "<option value=''>Select City</option>";
+
+            if (country && state && district) {
+                // You can add city data here or fetch it from a source
+            }
+        }
+    </script>
+</body>
+</html>

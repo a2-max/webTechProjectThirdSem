@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>1</id>
+        <name>Rijan Neupane</name>
+        <email>neupanerijan6@gmail.com</email>
+    </user>
+    <user>
+        <id>2</id>
+        <name>K.P Oli</name>
+        <email>olibaa@gmail.com</email>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Aadarsha Chaudhary</name>
+        <email>chauaadarsha@gmail.com</email>
+    </user>
+        <user>
+        <id>4</id>
+        <name>Riju Baby</name>
+        <email>babyrizu@gmail.com</email>
+    </user>
+    <user>
+        <id>5</id>
+        <name>Saugat Regmi</name>
+        <email>regmisaugat@gmail.com</email>
+    </user>
+</users>
